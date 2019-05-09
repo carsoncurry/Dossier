@@ -1,0 +1,12 @@
+.socialContainer {
+    border-radius: 50%;
+    background: darkslategrey;
+}
+
+a {
+    color: darkslategrey;
+}
+
+a:hover {
+    color: black;
+}

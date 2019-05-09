@@ -1,0 +1,17 @@
+body {
+    font-family: 'Gugi', cursive;
+}
+
+.switchButton {
+    border: transparent;
+}
+
+a {
+    margin-left: 15px;
+    margin-right: 15px;
+    color: whitesmoke;
+}
+
+a:hover {
+    color: darkslategrey;
+}
