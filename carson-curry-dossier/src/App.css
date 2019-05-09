@@ -15,3 +15,7 @@ a {
 a:hover {
     color: darkslategrey;
 }
+
+.pageFooter {
+    margin-top: 15px;
+}

@@ -2,9 +2,12 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { useTheme } from './ThemeContext';
 import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import NavItem from 'react-bootstrap/NavItem';
 import Row from 'react-bootstrap/Row';
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
 import './App.css';
 import Blog from './Components/Blog/Blog';
 import Personnel from './Components/Personnel/Personnel';
@@ -36,10 +39,23 @@ const App = () => {
           </NavItem>
         </Navbar>
         <Profile />
-        <Personnel />
-        <Skills />
-        <Operations />
-        <Blog />
+        <Container>
+          <h2>Agent Files</h2>
+          <Tabs defaultActiveKey="personnel" id="agent-tab">
+            <Tab eventKey="personnel" title="Personnel">
+              <Personnel />
+            </Tab>
+            <Tab eventKey="skills" title="Skills">
+              <Skills />
+            </Tab>
+            <Tab eventKey="operations" title="Operations">
+              <Operations />
+            </Tab>
+            <Tab eventKey="blog" title="Blog">
+              <Blog />
+            </Tab>
+          </Tabs>
+        </Container>
         <Navbar className="pageFooter bg-dark text-light justify-content-center" sticky="bottom">
           <Row>
             Carson Curry © 2019

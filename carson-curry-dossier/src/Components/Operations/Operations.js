@@ -25,7 +25,7 @@ class Operations extends React.Component {
     render() {
         return (
             <Container className="operationsContainer">
-                <Row>
+                <Row className="justify-content-center">
                     <Button className="btn-lg" variant="dark" onClick={this.handleShow}>
                         Operations Reports
                     </Button>

@@ -21,7 +21,7 @@ const renderTooltip = props => (
 
 const Blog = () => (
     <Container className="blogContainer">
-        <Row>
+        <Row className="justify-content-center">
             <OverlayTrigger
                 placement="right"
                 delay={{ show: 250, hide: 400 }}
